@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHRIST RESUME BUILDER</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="CHRST RESUME BUILDER" />
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="top">
+    <div id="cv" class="instaFade">
+        <div class="mainDetails">
+            <div>
+                <img src="{% static 'images/logo.png' %}" alt="NO PHOTO" style="width: 200px;padding-left: 220px;" />
+            </div>
+            <!-- <div id="headshot" class="quickFade">
+                <img src="{% static 'images/headshot.jpg' %}" alt="NO PHOTO" style="width: 200px;" />
+            </div> -->
+
+
+
+            <div id="name">
+
+                <h1 class="quickFade delayTwo">{{ name }}</h1>
+
+                <h2 class="quickFade delayThree">{{ job }}</h2>
+
+            </div>
+
+
+
+            <div id="contactDetails" class="quickFade delayFour">
+                <ul>
+                    <li>Email: {{email}}</li>
+                    <li>Phone: {{mobile}}</li>
+                    <li>LinkedIn: {{linked_in}}</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+
+        <div id="mainArea" class="quickFade delayFive">
+            <section>
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Personal Profile</h1>
+                    </div>
+
+
+                    <div class="sectionContent">
+                        <p>Address: {{address}}</p>
+                        <p>Date of Birth: {{birth}}</p>
+                        <p>Gender: {{gender}}</p>
+                        <p>Nationality: {{nationality}}</p>
+                        <p>About Me: <br>
+                        <h4>{{about}}</h4></p>
+                    </div>
+
+                </article>
+
+                <div class="clear"></div>
+
+            </section>
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>Education</h1>
+
+                </div>
+
+
+
+                <div class="sectionContent">
+
+                    <article>
+                        <h2>10th Grade</h2>
+                        <p class="subDetails"><h1>School: {{education_10}}</h1>
+                        Marks:  {{education_10_marks}}%</p>
+                    </article>
+
+                    <article>
+                        <h2>12th Grade</h2>
+                        <p class="subDetails"><h1>School: {{education_12}}</h1>
+                        Marks:  {{education_12_marks}}%</p>
+                    </article>
+
+                    <article>
+                        <h2>Undergraduate</h2>
+                        <p class="subDetails"><h1>Institution: {{education_ug}}</h1>
+                        Marks:  {{education_ug_marks}}%</p>
+                    </article>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>Key Skills</h1>
+
+                </div>
+
+                <div class="sectionContent">
+
+                    <ol class="keySkills" type="1">
+                        1. {{skills_1}}
+                        <br>
+                        2. {{skills_2}}
+                        <br>
+                        3. {{skills_3}}
+                        <br>    
+                        4. {{skills_4}}
+                        <br>
+                        5. {{skills_5}}
+                        <br>
+                        6. {{skills_6}}
+                    </ol>
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+
+            <section>
+
+                <div class="sectionTitle">
+
+                    <h1>
+                        Internship Experience
+                    </h1>
+
+                </div>
+
+
+
+                <div class="sectionContent">
+
+                    <article>
+                        <h2>{{experience_1_title}}:  {{experience_1_dur}}</h2>
+                    </article>
+
+                    <article>
+                        <h2>{{experience_2_title}}:  {{experience_2_dur}}</h2>
+                    </article>
+
+
+
+
+                </div>
+
+                <div class="clear"></div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-3753241-1");
+
+        pageTracker._initData();
+
+        pageTracker._trackPageview();
+    </script>
+
+<!-- <a href="info.html" class="btn btn-warning">Download CV</a> -->
+
+<!-- <button onclick="window.print()">Print this page</button> -->
+
+
+</body>
+
+</html>
